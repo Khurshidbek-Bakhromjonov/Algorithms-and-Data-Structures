@@ -1,5 +1,7 @@
 package com.bakhromjonov;
 
+import java.util.Arrays;
+
 public class Array {
 
     private int[] items;
@@ -23,6 +25,13 @@ public class Array {
         count++;
     }
 
+    public void insertAt(int item, int index) {
+        for (int i = count-1; i < index; i++) {
+            items[i] = items[i-1];
+        }
+        items[index] = item;
+    }
+
     public void removeAt(int index) {
         if (index < 0 || index >= count)
             throw new IllegalArgumentException();
@@ -38,6 +47,19 @@ public class Array {
             if (items[i] == item)
                 return i;
         return -1;
+    }
+
+    public int max() {
+        int max = items[count];
+        for (int i = 0; i < count; i++)
+            if (items[i] > max)
+                max = items[i];
+        return max;
+    }
+
+    public void reverse() {
+        for (int i = count - 1; i >= 0; i--)
+            System.out.println(items[i]);
     }
 
     public void print() {
