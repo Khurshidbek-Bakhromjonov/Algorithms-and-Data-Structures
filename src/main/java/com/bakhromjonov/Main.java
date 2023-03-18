@@ -1,5 +1,8 @@
 package com.bakhromjonov;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -8,7 +11,7 @@ public class Main {
         numbers.insert(20);
         numbers.insert(30);
         numbers.insert(40);
-        System.out.println(numbers.indexOf(300));
+        numbers.insertAt(12, 2);
         numbers.print();
     }
 }
