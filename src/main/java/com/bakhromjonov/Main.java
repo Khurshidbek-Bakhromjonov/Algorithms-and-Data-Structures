@@ -13,5 +13,6 @@ public class Main {
         numbers.insert(40);
         numbers.insertAt(12, 2);
         numbers.print();
+        
     }
 }
