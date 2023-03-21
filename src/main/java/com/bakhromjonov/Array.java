@@ -1,7 +1,5 @@
 package com.bakhromjonov;
 
-import java.util.Arrays;
-
 public class Array {
 
     private int[] items;
