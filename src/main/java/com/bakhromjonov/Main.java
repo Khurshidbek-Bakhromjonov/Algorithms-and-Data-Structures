@@ -1,8 +1,5 @@
 package com.bakhromjonov;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -10,5 +7,6 @@ public class Main {
         list.addLast(10);
         list.addLast(20);
         list.addLast(30);
+        System.out.println(list.contains(20));
     }
 }
